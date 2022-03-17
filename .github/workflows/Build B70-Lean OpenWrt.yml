@@ -56,7 +56,8 @@ jobs:
 
     - name: Install omcproxy    
       run: |
-        git clone https://github.com/riverscn/luci-app-omcproxy package/luci-app-omcproxy   
+        cd package
+        git clone https://github.com/riverscn/luci-app-omcproxy.git  
         
     - name: Clone source code
       working-directory: /workdir
