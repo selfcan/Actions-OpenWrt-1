@@ -56,10 +56,7 @@ jobs:
 
     - name: Install omcproxy    
       run: |
-        cd package
-        mkdir openwrt-packages
-        cd openwrt-packages
-        git clone https://github.com/riverscn/luci-app-omcproxy.git    
+        git clone https://github.com/riverscn/luci-app-omcproxy package/luci-app-omcproxy   
         
     - name: Clone source code
       working-directory: /workdir
