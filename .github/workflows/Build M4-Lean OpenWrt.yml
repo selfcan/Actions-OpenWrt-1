@@ -52,11 +52,7 @@ jobs:
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
-        sudo chown $USER:$GROUPS /workdir
-
-    - name: Install omcproxy    
-      run: |
-        git clone https://github.com/riverscn/luci-app-omcproxy package/luci-app-omcproxy    
+        sudo chown $USER:$GROUPS /workdir  
         
     - name: Clone source code
       working-directory: /workdir
