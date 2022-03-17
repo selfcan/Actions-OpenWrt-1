@@ -54,8 +54,13 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
-  
-    
+    - name: Install omcproxy    
+      run: |
+        cd package
+        mkdir openwrt-packages
+        cd openwrt-packages
+        git clone https://github.com/riverscn/luci-app-omcproxy.git    
+        
     - name: Clone source code
       working-directory: /workdir
       run: |
