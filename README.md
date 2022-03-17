@@ -15,6 +15,8 @@ A template for building OpenWrt with GitHub Actions
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
+- [Immortalwrt](https://github.com/immortalwrt/immortalwrt)
+- [Lienol's OpenWrt ](https://github.com/Lienol/openwrt)
 - [tmate](https://github.com/tmate-io/tmate)
 - [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
 - [csexton/debugger-action](https://github.com/csexton/debugger-action)
