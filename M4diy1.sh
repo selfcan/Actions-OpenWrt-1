@@ -41,3 +41,6 @@ export shanchu1=$(expr $shanchu1 - 1)
 export shanchu1=$(echo $shanchu1"r")
 sed -i "$shanchu1 youhua.txt" target/linux/ramips/dts/mt7621_xiaomi_mi-router-4.dts
 rm -rf youhua.txt
+
+# 添加第三方软件包
+git clone https://github.com/riverscn/luci-app-omcproxy package/luci-app-omcproxy
