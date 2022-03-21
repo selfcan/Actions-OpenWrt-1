@@ -22,3 +22,5 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # 添加第三方软件包
 #git clone https://github.com/riverscn/luci-app-omcproxy package/luci-app-omcproxy
+
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
