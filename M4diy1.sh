@@ -44,4 +44,4 @@ rm -rf youhua.txt
 
 # 添加第三方软件包
 git clone https://github.com/riverscn/luci-app-omcproxy package/luci-app-omcproxy
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
