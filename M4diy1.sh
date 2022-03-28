@@ -27,7 +27,7 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 
 # git clone https://github.com/Zxilly/UA2F package/UA2F
 
-### 修改为R4 Breed直刷版
+### 修改为xiaomi R4 Breed直刷版
 ## 1.修改 mt7621_xiaomi_mi-router-4.dts
 export shanchu1=$(grep  -a -n -e '&spi0 {' target/linux/ramips/dts/mt7621_xiaomi_mi-router-4.dts|cut -d ":" -f 1)
 export shanchu2=$(grep  -a -n -e '&pcie {' target/linux/ramips/dts/mt7621_xiaomi_mi-router-4.dts|cut -d ":" -f 1)
