@@ -34,7 +34,7 @@ export shanchu2=$(grep  -a -n -e '&pcie {' target/linux/ramips/dts/mt7621_xiaomi
 export shanchu2=$(expr $shanchu2 - 1)
 export shanchu2=$(echo $shanchu2"d")
 sed -i $shanchu1,$shanchu2 target/linux/ramips/dts/mt7621_xiaomi_mi-router-4.dts
-grep  -Pzo '&spi0[\s\S]*};[\s]*};[\s]*};[\s]*};' target/linux/ramips/dts/mt7621_xiaomi_mi-router-3g.dts > youhua.txt
+grep  -Pzo '&spi0[\s\S]*};[\s]*};[\s]*};[\s]*};' target/linux/ramips/dts/mt7621_xiaomi_mi-router-ac2100.dts > youhua.txt
 echo "" >> youhua.txt
 echo "" >> youhua.txt
 export shanchu1=$(expr $shanchu1 - 1)
