@@ -16,11 +16,11 @@
 
 # 添加插件源码
 # sed -i '$a src-git ddnsto https://github.com/linkease/ddnsto-openwrt' feeds.conf.default
-sed -i '$a src-git argon https://github.com/jerrykuku/luci-theme-argon.git' feeds.conf.default
+# sed -i '$a src-git argon https://github.com/jerrykuku/luci-theme-argon.git' feeds.conf.default
 # sed -i '$a src-git dnsfilter https://github.com/garypang13/luci-app-dnsfilter' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 # git clone https://github.com/CHN-beta/rkp-ipid package/rkp-ipid
-git clone 
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 # git clone https://github.com/Zxilly/UA2F package/UA2F
 
