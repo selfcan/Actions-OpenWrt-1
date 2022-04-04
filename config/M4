@@ -8,6 +8,11 @@ CONFIG_LUCI_CSSTIDY=y
 # CONFIG_OPENSSL_OPTIMIZE_SPEED is not set
 # CONFIG_PACKAGE_6in4 is not set
 # CONFIG_PACKAGE_block-mount is not set
+CONFIG_PER_FEED_REPO=y
+CONFIG_FEED_packages=y
+CONFIG_FEED_luci=y
+CONFIG_FEED_routing=y
+CONFIG_FEED_telephony=y
 CONFIG_PACKAGE_firewall=m
 CONFIG_PACKAGE_ip-tiny=y
 CONFIG_PACKAGE_ip6tables-legacy=y
