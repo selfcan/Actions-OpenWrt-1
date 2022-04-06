@@ -20,7 +20,8 @@
 # sed -i '$a src-git dnsfilter https://github.com/garypang13/luci-app-dnsfilter' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 # git clone https://github.com/CHN-beta/rkp-ipid package/rkp-ipid
-
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # git clone https://github.com/Zxilly/UA2F package/UA2F
 
 ### 修改xiaomi R4 Breed直刷版
