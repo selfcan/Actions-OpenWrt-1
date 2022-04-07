@@ -8,7 +8,7 @@
 
 A template for building OpenWrt with GitHub Actions
 
-xiaomi R4千兆版 breed直刷
+xiaomi R4千兆版修改为breed直刷
 
 ## Credits
 
