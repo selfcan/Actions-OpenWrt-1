@@ -23,6 +23,7 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 # sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # git clone https://github.com/Zxilly/UA2F package/UA2F
   git clone https://github.com/immortalwrt/luci/tree/master/themes/luci-theme-argon
+  
 ### xiaomi R4千兆版修改为breed直刷
 ## 修改 mt7621_xiaomi_mi-router-4.dts
 export shanchu1=$(grep  -a -n -e '&spi0 {' target/linux/ramips/dts/mt7621_xiaomi_mi-router-4.dts|cut -d ":" -f 1)
