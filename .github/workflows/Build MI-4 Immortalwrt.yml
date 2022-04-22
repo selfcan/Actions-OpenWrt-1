@@ -23,7 +23,7 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/M4
-  DIY_P1_SH: diy-part1.sh
+  DIY_P1_SH: M4diy1.sh
   DIY_P2_SH: diy/M4.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
@@ -59,12 +59,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        
-    - name: Revise mt7621_xiaomi_mi-router-4.dts
-      run: |
-        cd immortalwrt/target/linux/ramips/dts
-        wget https://github.com/hy5528/Actions-OpenWrt/blob/main/mt7621_xiaomi_mi-router-4.dts -O mt7621_xiaomi_mi-router-4.dts
-        cd ../../../../../
         
     - name: Load custom feeds
       run: |
