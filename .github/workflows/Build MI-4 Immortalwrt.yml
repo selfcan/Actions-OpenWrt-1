@@ -62,7 +62,7 @@ jobs:
         
     - name: Revise mt7621_xiaomi_mi-router-4.dts
       run: |
-        cd openwrt/target/linux/ramips/dts
+        cd immortalwrt/target/linux/ramips/dts
         wget https://github.com/hy5528/Actions-OpenWrt/blob/main/mt7621_xiaomi_mi-router-4.dts -O mt7621_xiaomi_mi-router-4.dts
         cd ../../../../../
         
