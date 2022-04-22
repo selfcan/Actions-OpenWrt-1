@@ -3,8 +3,8 @@
 #include "mt7621_xiaomi_router-ac2100.dtsi"
 
 / {
-	compatible = "xiaomi,mi-router-ac2100", "mediatek,mt7621-soc";
-	model = "Xiaomi Mi Router AC2100";
+	compatible = "xiaomi,mi-router-4", "mediatek,mt7621-soc";
+	model = "Xiaomi Mi Router 4";
 
 	aliases {
 		led-boot = &led_status_yellow;
