@@ -93,6 +93,7 @@ jobs:
       id: package
       run: |
         cd openwrt
+        sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
