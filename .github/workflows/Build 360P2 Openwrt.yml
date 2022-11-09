@@ -89,7 +89,7 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
-    - name: Make download
+      - name: Make download
         run: |
           make download -j8 || make download -j1 V=s
           rm -rf $(find ./dl/ -size -1024c)
