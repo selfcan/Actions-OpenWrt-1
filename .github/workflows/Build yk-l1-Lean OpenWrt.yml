@@ -11,14 +11,23 @@
 name: Build yk-l1-Lean OpenWrt
 
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
-
+      name:
+        description: "Build OpenWrt"
+        required: true
+        default: "build"
+  # release:
+  #   types: [published]
+  push:
+    tags:
+      - "v*"
+  #  branches:
+  #    - master
+  #  schedule:
+  #    - cron: 0 8 * * 5
+  #watch:
+  #  types: [started]
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
