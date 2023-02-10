@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build 360P2-Lean OpenWrt
+name: Build 86full-Lean OpenWrt
 
 on:
   repository_dispatch:
