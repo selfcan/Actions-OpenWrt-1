@@ -15,7 +15,7 @@ sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_gene
 # 清空登录密码
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 # Modify X86 Kernel 6.1
-#sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
+sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
 # 重新添加 luci-app-adbyby-plus-lite
 #rm -rf feeds/luci/applications/luci-app-adbyby-plus
 #git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
