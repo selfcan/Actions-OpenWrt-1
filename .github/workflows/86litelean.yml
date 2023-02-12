@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build 86lite-immortalwrt OpenWrt
+name: Build 86lite-lean OpenWrt
 
 on:
   repository_dispatch:
