@@ -15,14 +15,14 @@ sed -i 's/192.168.1.1/192.168.50.101/g' package/base-files/files/bin/config_gene
 # 清空登录密码
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 # Modify X86 Kernel 6.1
-sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
+#sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
 # 重新添加 luci-app-adbyby-plus-lite
 #rm -rf feeds/luci/applications/luci-app-adbyby-plus
 #git clone https://github.com/selfcan/luci-app-adbyby-plus-lite.git package/luci-app-adbyby-plus
 #添加luci-app-netspeedtest
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 #添加 luci-app-my-dnshelper
-git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
+#git clone https://github.com/selfcan/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 #添加luci-app-filebrowser
 git clone https://github.com/tcsr200722/luci-app-filebrowser.git package/luci-app-filebrowser
 #git clone https://github.com/openwrt-xiaomi/luci-app-filebrowser.git package/luci-app-filebrowser
@@ -34,8 +34,8 @@ git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 #添加luci-app-dnsfilter
-#rm -rf feeds/luci/applications/luci-app-dnsfilter
-#git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
+rm -rf feeds/luci/applications/luci-app-dnsfilter
+git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
 #添加luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 #添加luci-app-my-dnshelper
