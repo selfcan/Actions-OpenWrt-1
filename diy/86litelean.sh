@@ -35,11 +35,11 @@ git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 #添加luci-app-dnsfilter
 rm -rf feeds/luci/applications/luci-app-dnsfilter
-git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
+#git clone https://github.com/kongfl888/luci-app-dnsfilter.git package/luci-app-dnsfilter
 #添加luci-app-autotimeset
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 #添加luci-app-my-dnshelper
-#git clone https://github.com/kongfl888/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
+git clone https://github.com/kongfl888/openwrt-my-dnshelper.git package/luci-app-my-dnshelper
 #添加luci-app-easymesh
 #git clone https://github.com/tcsr200722/luci-app-easymesh.git package/luci-app-easymesh
 #添加luci-app-diskman
