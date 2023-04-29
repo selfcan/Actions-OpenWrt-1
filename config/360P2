@@ -23,8 +23,8 @@ CONFIG_PACKAGE_kmod-ipt-raw=y
 # CONFIG_PACKAGE_kmod-nf-nathelper-extra is not set
 # CONFIG_PACKAGE_kmod-nft-fib is not set
 # CONFIG_PACKAGE_kmod-nft-nat6 is not set
-CONFIG_PACKAGE_kmod-sound-core=y
-CONFIG_PACKAGE_kmod-usb-audio=y
+# CONFIG_PACKAGE_kmod-sound-core=y
+# CONFIG_PACKAGE_kmod-usb-audio=y
 CONFIG_PACKAGE_libcap=y
 CONFIG_PACKAGE_libuci-lua=y
 # CONFIG_PACKAGE_libucode is not set
@@ -48,11 +48,11 @@ CONFIG_PACKAGE_luci-i18n-udpxy-zh-cn=y
 CONFIG_PACKAGE_luci-lib-nixio_notls=y
 # CONFIG_PACKAGE_luci-lib-nixio_openssl is not set
 CONFIG_PACKAGE_luci-theme-argon=y
-# CONFIG_PACKAGE_luci-theme-infinityfreedom=y
+CONFIG_PACKAGE_luci-theme-infinityfreedom=y
 # CONFIG_PACKAGE_mwan3=y
 # CONFIG_PACKAGE_nftables-json is not set
 # CONFIG_PACKAGE_procd-ujail is not set
-CONFIG_PACKAGE_squeezelite-full=y
+# CONFIG_PACKAGE_squeezelite-full=y
 # CONFIG_PACKAGE_ttyd=y
 # CONFIG_PACKAGE_ucode is not set
 CONFIG_PACKAGE_udpxy=y
