@@ -1,6 +1,7 @@
 一、自用固件，B70和yk-l1集成了kmod-usb-audio和squeezelite-full，可以和Daphile或者Logitech media server(LMS)、roon core等组成双机播放系统（当然还要有个USB声卡才行）。
 
 二、可以通过修改配置文件/etc/config/squeezelite，设置声卡、编码等参数：
+
 /etc/config/squeezelite设置说明
 
 config options 'options'   
