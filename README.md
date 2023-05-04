@@ -3,7 +3,6 @@
 二、可以通过修改配置文件/etc/config/squeezelite，设置声卡、编码等参数：
 
 /etc/config/squeezelite设置说明
-
 config options 'options'   
 
 option name 'squeezelite-studio'   #设置播放器名
