@@ -17,7 +17,7 @@ sed -i 's/Bootstrap/Argon/g' feeds/luci/collections/luci/Makefile
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # max conntrack
-#sed -i 's,16384,65536,g' package/kernel/linux/files/sysctl-nf-conntrack.conf
+sed -i 's,16384,65536,g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
 # mac80211
 #patch -p1 -i ../patches/mac80211.patch
