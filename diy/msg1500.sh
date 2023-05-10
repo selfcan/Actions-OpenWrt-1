@@ -20,4 +20,4 @@ sed -i 's/Bootstrap/Argon/g' feeds/luci/collections/luci/Makefile
 sed -i 's,16384,65536,g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
 # mac80211
-patch -p1 -i ../patches/mac80211.patch
+# patch -p1 -i ../patches/mac80211.patch
