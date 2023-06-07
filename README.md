@@ -35,6 +35,3 @@ option alsa_format '16'                 #位深，xmos可以设置未24位
 
 option alsa_mmap '0'
 
-以上可以根据实际情况设置，以下是重点，
-
-option server_addr '192.168.5.209'            #LMS等服务器的地址，根据实际填写。这个是重点，不加这一项，Daphile或者Logitech media server(LMS)、roon core等有可能发现不了这个的squeezelite播放器，我把一台玩客云刷Armbian后安装Logitech media server(LMS)没有写这一项，死活认不出squeezelite播放器，192.168.5.209是我的玩客云IP地址。
