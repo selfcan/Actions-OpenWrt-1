@@ -1,33 +1,37 @@
-**English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+一、自用固件，B70和yk-l1集成了kmod-usb-audio和squeezelite-full，可以和Daphile或者Logitech media server(LMS)、roon core等组成双机播放系统（当然还要有个USB声卡才行）。
 
-# Actions-OpenWrt
+二、可以通过修改配置文件/etc/config/squeezelite，设置声卡、编码等参数：
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
+/etc/config/squeezelite设置说明
 
-A template for building OpenWrt with GitHub Actions
+config options 'options'   
 
+option name 'squeezelite-studio'   #设置播放器名
 
-## Credits
+option model_name 'SqueezeLite' #是播放器类型，不用改
 
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [Lienol's OpenWrt ](https://github.com/Lienol/openwrt)
-- [Immortalwrt](https://github.com/immortalwrt/immortalwrt)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
+option close_delay '0'
 
-## License
+option priority '0'                           #进程优先级   
 
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
+option device 'hw:0,0'                    #声卡设备编号，默认hw:0,0，自动选取。
+
+option decoder_auto_conf '1'
+
+option dsd_over_pcm '0'                #播放DSD转码，dop
+
+option stream_bufsiz '8192'           #缓冲
+
+option out_bufsiz '8192'                #缓冲
+
+option max_sr '48000'                   #解码器支持的最高码率，xmos可以设置位384000
+
+option sr_delay '256'                     
+option alsa_buffer '256'                #声卡缓冲，毫秒
+
+option alsa_period '4'                   #the period count (values less than 50) or size in bytes (default 4 periods);
+
+option alsa_format '16'                 #位深，xmos可以设置未24位
+
+option alsa_mmap '0'
+
